@@ -41,7 +41,7 @@ Loop through the data and echo back to the screen a list of unique words in tabl
 # Running the code
 - Download and install wamp or xampp.
 - Create a folder in the htdocs folder e.g scrapping.
-- Install composer [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)\
+- Install composer [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)
 - Open cmd and navigate to the created foldr directory and install guzzlehttp/guzzle `composer require guzzlehttp/guzzle` and dom crawler ```composer require guzzlehttp/guzzle```.\
 vendor folder will be downloaded in the new directory, composer.json and composer.lock files will also be created outside vendor folder.
 - Copy and paste index.php,code.php.
