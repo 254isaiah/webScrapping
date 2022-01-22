@@ -23,7 +23,7 @@ Searching for the guzzle
 composer search guzzle
 ``
 #### Installing guzzel
-```composer require guzzlehttp/guzzle``` used to pull data. It installs the vendor folder. Pulls down our coomposer install and creates a folder named vendor with files in it.
+```composer require guzzlehttp/guzzle``` used to pull data. It installs the vendor folder. Pulls down our composer install and creates a folder named vendor with files in it.
 
 ## Install dom crawler
 [dom crawler](https://symfony.com/doc/current/components/dom_crawler.html) docummentation in Github\
@@ -35,12 +35,15 @@ dom crawler - loops through data brought back by guzzlehttp/guzzel.Installed by\
 ### index.php
 Contains an input field to promp the user to enter web url.
 ### code.php
-Gets url enterred and uses dom crawler [Node Filtering](https://symfony.com/doc/current/components/dom_crawler.html#node-filtering) to sprawl through data from the web page. I used body tags in the source to capture all content. Searched using [css selector component](https://symfony.com/doc/current/components/css_selector.html)/Loop through the data and echo back to the screen a list of unique words in table format together with their occurrences.The occurrences and unique text is also stored in the csv file to capture data from different web pages and get the similar data set by looking at alphabetic order.
+Gets url enterred and uses dom crawler [Node Filtering](https://symfony.com/doc/current/components/dom_crawler.html#node-filtering) to sprawl through data from the web page. I used body tags in the source to capture all content. Searched using [css selector component](https://symfony.com/doc/current/components/css_selector.html)\
+Loop through the data and echo back to the screen a list of unique words in table format together with their occurrences.The occurrences and unique text is also stored in the csv file to capture data from different web pages and get the similar data set by looking at alphabetic order.
 
 # Running the code
 - Download and install wamp or xampp.
 - Create a folder in the htdocs folder e.g scrapping.
-- Install composer,guzzlehttp/guzzle,dom crawler vendor folder will e downloaded, composer.json and composer.lock files in the created directory.
+- Install composer [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)\
+- Open cmd and navigate to the created foldr directory and install guzzlehttp/guzzle `composer require guzzlehttp/guzzle` and dom crawler ```composer require guzzlehttp/guzzle```.\
+vendor folder will be downloaded in the new directory, composer.json and composer.lock files will also be created outside vendor folder.
 - Copy and paste index.php,code.php.
 - Start xampp.
 - In the url search **localhost/createdFolder/index.php**
